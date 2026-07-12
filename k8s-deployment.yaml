@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: demo-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: demo
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: reyadevopsacr.azurecr.io/demo-app:latest
+        image: haridevopsacr.azurecr.io/demo-app:latest
         ports:
         - containerPort: 80
 ---
